@@ -1,0 +1,274 @@
+/* CSS Reset */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font-family: 'Poppins', sans-serif;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+html {
+  scroll-behavior: smooth;
+  transition: all 0.4s;
+}
+body {
+  overflow-x: hidden;
+}
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  transition: 3s;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+#navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  align-items: center;
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 1;
+  top: 0;
+  background: #fff;
+  border: 1px solid #364;
+}
+
+#navigation > nav > ul {
+  display: flex;
+}
+
+#navigation > nav > ul > li > a {
+  padding: 30px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#navigation > nav > ul > li > a:hover{
+  transition: all 0.75s;
+  color: black;
+  background-color: greenyellow;
+  text-decoration: underline;
+  border-radius: 5%;
+  padding: 10px;
+}
+
+#navigation > button{
+  border-width: 0;
+  border-radius: 10%;
+  padding: 12px;
+}
+
+#navigation > button:hover {
+  transition: all 0.5s;
+  transform-style: scale(110%);
+  cursor: pointer;
+}
+
+#navigation > button:active {
+  transition: all 0.75s;
+  background-color: black;
+}
+
+#navigation > a {
+  color: black;
+  text-decoration: none;
+}
+
+#navigation > a:hover {
+  transition: all 0.75s;
+  border-radius: 5%;
+  padding: 10px;
+}
+
+/* @media screen and (max-width: 500) {
+  #navigation > a .box-menu-navigation{
+    display: none;
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+  }
+
+  #navigation > button .box-menu-bar {
+    display: inline-block;
+  }
+} */
+
+#welcome {
+  background-image: url(./media/andrew-coelho-aL7SA1ASVdQ-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-inline: auto;
+  display: flex;
+  flex: auto;
+}
+
+#welcome > h1 {
+  font-weight: bolder;
+  font-size: 35px;
+  color: rgb(215, 215, 77);
+  padding-bottom: 10px;
+}
+
+#welcome > h2 {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  display: flex;
+}
+
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
+
+#welcome > p {
+  text-align: center;
+  color: white;
+}
+
+#welcome > p > span {
+  font-weight: bolder;
+  font-style: italic;
+  color: #FFFF00;
+}
+
+#welcome > figure > img {
+  width: 300px;
+  border-radius: 5%;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* aboutme */
+section {
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.kolom {
+  margin: 50px 50px;
+  align-items: center;
+}
+
+.kolom > h2 {
+  margin-bottom: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #285430;
+}
+
+a.tbl-biru {
+  background: #68B984;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-biru:hover {
+  background: #829460;
+  text-decoration: none;
+}
+
+p {
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
+}
+
+
+/* course */
+section{
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.kolom .deskripsi {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-style: italic;
+  font-weight: bold;
+  color: #5F8D4E;
+}
+
+.kolom > p {
+  font-family: 'comic sans ms';
+  font-weight: 500px;
+  font-size: 20px;
+  width: 100%;
+}
+/* hobby */
+.tengah{
+  text-align: center;
+  width: 100%;
+}
+
+.hobi-list {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+/* contact */
+#contact {
+  align-items: center;
+  justify-content: center;
+}
+
+#contact > h2 {
+  font-size: 30px;
+}
+
+#contact > ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#underlined-animation::after{
+  content: " ";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease ease-in-out;
+}
+
+.underlined-animation:hover::after {
+  width: 100%;
+}
+
+#footer {
+  display: flex;
+  background-color: lightgrey;
+  padding: 25px 0;
+  justify-content: center;
+}
+
+#footer > p > a {
+  text-decoration: none;
+  font-size: 10px;
+  color: black;
+}
+
+
+
